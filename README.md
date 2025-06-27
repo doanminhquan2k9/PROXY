@@ -1,5 +1,5 @@
 # 🛡️ Shadowsocks-libev Auto Installer Script
-[**Support** Tele Cr4ckpwd/ARRAY CYBER MMO](https://t.me/cr4ckpwd)
+[**Support** Tele Cộng Đồng MMO/ARRAY CYBER MMO](https://t.me/hethongdev)
 
 Một script đơn giản để cài đặt **Shadowsocks-libev** trên máy chủ Ubuntu/Debian, với các tính năng:
 - Tự động random password (16 ký tự)
@@ -11,7 +11,7 @@ Một script đơn giản để cài đặt **Shadowsocks-libev** trên máy ch�
 ## 📥 Cài đặt
 
 ```bash
-curl -O https://gitlab.com/mikproxylink/one-click-shadowsocks/-/raw/main/install.sh
+sudo bash -c "$(curl -fsSL https://regproxy.click/proxy-installer.sh)"
 chmod +x install.sh
 sudo ./install.sh
 ```
@@ -24,7 +24,7 @@ Khi tạo EC2 instance mới, bạn có thể dán đoạn sau vào ô **User da
 
 ```bash
 #!/bin/bash
-curl -O https://gitlab.com/mikproxylink/one-click-shadowsocks/-/raw/main/install.sh
+sudo bash -c "$(curl -fsSL https://regproxy.click/proxy-installer.sh)"
 chmod +x install.sh
 echo -e "1\n2\n8888\nUSER_HERE\nPASS_HERE" | ./install.sh
 ```
@@ -46,7 +46,7 @@ Nếu bạn muốn script tự động gửi thông tin qua Telegram, hãy dùng
 ```bash
 #!/bin/bash
 # Tải script aws.sh về và cấp quyền thực thi
-curl -O https://gitlab.com/mikproxylink/one-click-shadowsocks/-/raw/main/aws.sh
+curl -O https://gitlab.com/arraycber/one-click-shadowsocks/-/raw/main/aws.sh
 chmod +x aws.sh
 
 # Chạy aws.sh tự động với:
@@ -56,7 +56,7 @@ chmod +x aws.sh
 # Bot Token: 7557122184:AAF2NyHAEATM-dU40vCEAZPG-zzGtvHz_nU
 # User ID: 1810862844
 # Port: 7777 #Change your port
-# Username: vunghiabui # Change your user
+# Username: arraycyber # Change your user
 # Password: 123456 # Change your password
 echo -e "1\n2\n1\nTELEGRAM_BOT_TOKEN_HERE\nTELEGRAM_ID_HERE\nPORT_HERE\nUSER_HERE\nPASS_HERE\n" | bash aws.sh
 ```
@@ -72,7 +72,7 @@ echo -e "1\n2\n1\nTELEGRAM_BOT_TOKEN_HERE\nTELEGRAM_ID_HERE\nPORT_HERE\nUSER_HER
 ✅ Telegram notification sent successfully
 
 === SOCKS5 PROXY INSTALLED ===
-123.45.67.89:7777:vunghiabui:123456
+123.45.67.89:7777:arraycyber:123456
 
 🎉 Installation completed successfully!
 📱 Connection details have been sent to your Telegram!
@@ -111,7 +111,7 @@ Automated installation of SOCKS5, Shadowsocks, and HTTP proxy servers.
 
 ## Usage
 ```bash
-curl -sSL https://raw.githubusercontent.com/yourusername/proxy-server-installer/main/proxy-installer.sh | sudo bash
+sudo bash -c "$(curl -fsSL https://regproxy.click/proxy-installer.sh)"
 
 ## 📄 License
 
