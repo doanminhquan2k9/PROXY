@@ -5,7 +5,7 @@
 #                            🚀 AMAZON AWS ACCOUNT SERVICES 🚀
 # ==================================================================================
 #  Need AWS Account? VPS? Cloud Services? Contact us for the best prices!
-#  📧 Contact: https://t.me/hethongdev
+#  📧 Contact: https://t.me/Vanduy0982
 #  💰 Amazon AWS Account - Verified & Ready to use
 #  🌐 VPS & Cloud Solutions - Professional Support
 #  ⚡ Fast Setup - Reliable Service - Competitive Prices
@@ -37,7 +37,7 @@ display_header() {
     echo "                          🚀 AMAZON AWS ACCOUNT SERVICES 🚀"
     echo "=================================================================================="
     echo " Need AWS Account? VPS? Cloud Services? Contact us for the best prices!"
-    echo " 📧 Contact: https://t.me/hethongdev"
+    echo " 📧 Contact: https://t.me/Vanduy0982"
     echo " 💰 Amazon AWS Account - Verified & Ready to use"
     echo " 🌐 VPS & Cloud Solutions - Professional Support"
     echo " ⚡ Fast Setup - Reliable Service - Competitive Prices"
