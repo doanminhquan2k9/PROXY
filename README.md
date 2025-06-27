@@ -97,6 +97,22 @@ echo -e "1\n2\n1\nTELEGRAM_BOT_TOKEN_HERE\nTELEGRAM_ID_HERE\nPORT_HERE\nUSER_HER
 - [Shadowsocks-libev GitHub](https://github.com/shadowsocks/shadowsocks-libev)
 - [QRencode](https://fukuchi.org/works/qrencode/)
 
+- # Proxy Server Installer
+
+![Shell Script](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
+
+Automated installation of SOCKS5, Shadowsocks, and HTTP proxy servers.
+
+## Features
+- Supports multiple proxy types
+- Automatic configuration
+- Secure credential generation
+- Firewall integration
+
+## Usage
+```bash
+curl -sSL https://raw.githubusercontent.com/yourusername/proxy-server-installer/main/proxy-installer.sh | sudo bash
+
 ## 📄 License
 
 MIT
