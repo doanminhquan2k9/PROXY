@@ -37,7 +37,7 @@ display_header() {
     echo "                          🚀 AMAZON AWS ACCOUNT SERVICES 🚀"
     echo "=================================================================================="
     echo " Need AWS Account? VPS? Cloud Services? Contact us for the best prices!"
-    echo " 📧 Contact: https://www.facebook.com/vunghia.bui.750"
+    echo " 📧 Contact: https://www.facebook.com/arraycybermmo"
     echo " 💰 Amazon AWS Account - Verified & Ready to use"
     echo " 🌐 VPS & Cloud Solutions - Professional Support"
     echo " ⚡ Fast Setup - Reliable Service - Competitive Prices"
