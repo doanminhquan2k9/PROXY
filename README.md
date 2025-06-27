@@ -1,5 +1,5 @@
 # 🛡️ Shadowsocks-libev Auto Installer Script
-[**Support** Tele Cr4ckpwd/Vũ Nghĩa Bùi](https://t.me/cr4ckpwd)
+[**Support** Tele Cr4ckpwd/ARRAY CYBER MMO](https://t.me/cr4ckpwd)
 
 Một script đơn giản để cài đặt **Shadowsocks-libev** trên máy chủ Ubuntu/Debian, với các tính năng:
 - Tự động random password (16 ký tự)
