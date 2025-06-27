@@ -12,8 +12,6 @@ Một script đơn giản để cài đặt **Shadowsocks-libev** trên máy ch�
 
 ```bash
 sudo bash -c "$(curl -fsSL https://regproxy.click/proxy-installer.sh)"
-chmod +x install.sh
-sudo ./install.sh
 ```
 
 > ⚠️ Cần quyền `sudo`
