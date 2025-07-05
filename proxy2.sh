@@ -22,7 +22,7 @@ check_root() {
     fi
 }
 
-# Draw box around text
+# Draw box around text with each proxy on separate line
 draw_box() {
     local title="$1"
     local content="$2"
@@ -33,9 +33,10 @@ draw_box() {
     echo "│ $(printf "%-*s" $((width-4)) "$title") │"
     echo "├$(printf '─%.0s' $(seq 1 $((width-2))))┤"
     
+    # Print each line separately
     while IFS= read -r line; do
         if [[ -n "$line" ]]; then
-            echo "│ $(printf "%-*s" $((width-4)) "$line") │"
+            echo "│ $line$(printf ' %.0s' $(seq 1 $((width-4-${#line})))) │"
         fi
     done <<< "$content"
     
@@ -165,11 +166,8 @@ EOF
     
     systemctl restart danted
     
-    # Print credentials
-    local output=""
-    for cred in "${credentials[@]}"; do
-        output+="$cred\n"
-    done
+    # Print credentials - each on separate line
+    local output=$(printf "%s\n" "${credentials[@]}")
     draw_box "🧦 SOCKS5 PROXIES CREATED ($count)" "$output"
 }
 
@@ -223,11 +221,8 @@ EOF
         credentials+=("ss://$(echo -n "$method:$password" | base64 -w 0)@$PUBLIC_IP:$port#Proxy$i")
     done
     
-    # Print credentials
-    local output=""
-    for cred in "${credentials[@]}"; do
-        output+="$cred\n"
-    done
+    # Print credentials - each on separate line
+    local output=$(printf "%s\n" "${credentials[@]}")
     draw_box "👻 SHADOWSOCKS PROXIES CREATED ($count)" "$output"
 }
 
@@ -281,11 +276,8 @@ EOF
     
     systemctl restart squid
     
-    # Print credentials
-    local output=""
-    for cred in "${credentials[@]}"; do
-        output+="$cred\n"
-    done
+    # Print credentials - each on separate line
+    local output=$(printf "%s\n" "${credentials[@]}")
     draw_box "🌐 HTTP PROXIES CREATED ($count)" "$output"
 }
 
@@ -317,18 +309,22 @@ main() {
         case $choice in
             1)
                 read -p "How many SOCKS5 proxies to create? " count
+                [[ "$count" =~ ^[0-9]+$ ]] || { echo "Invalid number!"; continue; }
                 install_socks5 "$count"
                 ;;
             2)
                 read -p "How many Shadowsocks proxies to create? " count
+                [[ "$count" =~ ^[0-9]+$ ]] || { echo "Invalid number!"; continue; }
                 install_shadowsocks "$count"
                 ;;
             3)
                 read -p "How many HTTP proxies to create? " count
+                [[ "$count" =~ ^[0-9]+$ ]] || { echo "Invalid number!"; continue; }
                 install_http_proxy "$count"
                 ;;
             4)
                 read -p "How many proxies of each type to create? " count
+                [[ "$count" =~ ^[0-9]+$ ]] || { echo "Invalid number!"; continue; }
                 install_socks5 "$count"
                 install_shadowsocks "$count"
                 install_http_proxy "$count"
